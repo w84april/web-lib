@@ -14,6 +14,9 @@
 	"engines": {
 		"node": ">=14"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"dev": "tsc --watch",
 		"exportStyle": "npx tailwindcss --postcss -c ./tailwind.config.cjs -i src/style.css -o dist/build.css --minify",
