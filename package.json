@@ -1,21 +1,14 @@
 {
   "name": "@w84april/web-lib",
-  "version": "4.1.12",
+  "version": "4.1.18",
   "main": "./dist/index.js",
   "types": "./dist/index.d.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/w84april/web-lib"
-  },
   "files": [
     "."
   ],
   "type": "module",
   "engines": {
     "node": ">=14"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "scripts": {
     "dev": "tsc --watch",

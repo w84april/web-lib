@@ -7,7 +7,13 @@ const yDaemonVaultStrategySchema = z.object({
 	address: addressSchema,
 	name: z.string(),
 	description: z.string().optional().default(''),
-	status: z.literal('active').or(z.literal('not_active')).or(z.literal('unallocated')),
+	netAPR: z.number().default(0).catch(0),
+	status: z
+		.literal('active')
+		.or(z.literal('not_active'))
+		.or(z.literal('unallocated'))
+		.default('not_active')
+		.catch('not_active'),
 	details: z
 		.object({
 			totalDebt: z.string(),
